@@ -29,3 +29,5 @@ ALTER TABLE `serie`
 
 ALTER TABLE `serie`
 ADD CONSTRAINT `utente_key` FOREIGN KEY (`utente`) REFERENCES `utenti` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+INSERT INTO `utenti` (`nickname`,`password`,`amministratore`) VALUES ("admin",MD5("123"),1);
