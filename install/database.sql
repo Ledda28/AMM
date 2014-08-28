@@ -24,10 +24,11 @@ CREATE TABLE IF NOT EXISTS `utenti` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
+INSERT INTO `utenti` (`nickname`,`password`,`amministratore`) VALUES ("admin",MD5("123"),1);
+
 ALTER TABLE `serie`
  ADD UNIQUE KEY `nome_unico` (`utente`,`nome`), ADD KEY `utente` (`utente`);
 
 ALTER TABLE `serie`
 ADD CONSTRAINT `utente_key` FOREIGN KEY (`utente`) REFERENCES `utenti` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
-INSERT INTO `utenti` (`nickname`,`password`,`amministratore`) VALUES ("admin",MD5("123"),1);
