@@ -32,9 +32,9 @@ class user {
 		$stmt->bind_param("ss", $data['user'],md5($data['password']));
 		//Eseguo
 		$ret = $stmt->execute();
+		if (!$ret) echo "<!-- ".$stmt->error."-->";
 		//Chiusura statement
 		$stmt->close();
-		if (!$ret) echo "<!-- ".$stmt->error."-->";
 		return $ret;
 	}
 
