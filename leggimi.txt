@@ -1,0 +1,27 @@
+1. Il sito si basa sulla creazione di serie tv.
+   Verrà richiesto di autenticarsi e si potrà scegliere tra utente e amministratore.
+   L'utente potrà essere creato e eliminato o si potrà far uso di quello già presente fornito di credenziali. 
+   L'utente può inserire una serie ma questa per poter risultare visibile necessita
+   dell'autorizzazione dell'amministratore.
+   Una volta che quest'ultimo ha dato il consenso la serie risulterà visibile nella home.
+   Una volta eliminato l'utente le serie da lui implementate verranno rimosse insieme ad esso.
+   L'amministratore è l'unico che può eliminare le serie, gli utenti e non può essere eliminato.
+
+
+
+2. Son stati soddisfatti i seguenti requisiti:
+
+   Utilizzo di HTML e CSS
+   Utilizzo di PHP e MySQL
+   Utilizzo del pattern MVC
+   Due ruoli, "utente" e "amministratore".
+   Una transazione è nel file system/user.php nella funzione elimina
+   Funzionalità ajax è nelle pagine approva serie ed elimina serie
+
+
+
+3. Credenziali di autenticazione e link alla homepage
+
+Utente:                  Username: john       Password: 123456
+Amministratore:      Username: admin    Password: 123
+Link Homepage:     

@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^$ index.php?page=home [L,QSA]
+RewriteRule ^index.html$ index.php?page=home [L,QSA]
+RewriteRule ^index.htm$ index.php?page=home [L,QSA]
+RewriteRule ^serie/([^/]+)\.htm index.php?page=serie&serie=$1 [L,QSA]
+RewriteRule ^([^/]+)\.htm index.php?page=$1 [L,QSA]
+RewriteRule ^(.*)/$ index.php?notfound=$1 [L,QSA]
