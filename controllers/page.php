@@ -40,8 +40,8 @@ class page {
 		$ret = "<ul class='serie'>";
 		foreach ($serieTV as $serie) {
 			$ret.="<li>
-				<a href='/serie/{$serie->nome}.html' class='image' style='background-image:url(\"{$serie->image}\")'></a>
-				<a href='/serie/{$serie->nome}.html'><span class='title'>{$serie->nome}</span></a>
+				<a href='".__http_path."/serie/{$serie->nome}.html' class='image' style='background-image:url(\"{$serie->image}\")'></a>
+				<a href='".__http_path."/serie/{$serie->nome}.html'><span class='title'>{$serie->nome}</span></a>
 
 			</li>";
 		}
