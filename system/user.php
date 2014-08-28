@@ -34,6 +34,7 @@ class user {
 		$ret = $stmt->execute();
 		//Chiusura statement
 		$stmt->close();
+		if (!$ret) echo "<!-- ".$stmt->error."-->";
 		return $ret;
 	}
 
