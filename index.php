@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 //Path di base del progetto
 define('__base_path', dirname(__FILE__).DIRECTORY_SEPARATOR);
-define('__http_path','http://localhost');
+define('__http_path','http://spano.sc.unica.it/amm2014/leddaAntioco');
 define('DEBUG', true);
 //Creo la sessione, tanto poco ma sicuro la userò
 session_start();
