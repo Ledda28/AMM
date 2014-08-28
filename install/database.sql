@@ -1,5 +1,8 @@
+DROP TABLE `serie`;
+DROP TABLE `utenti`;
+
 CREATE TABLE IF NOT EXISTS `serie` (
-`id` int(10) unsigned NOT NULL,
+`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `utente` int(10) unsigned NOT NULL,
   `nome` varchar(30) NOT NULL,
   `genere` enum('animazione','avventura','azione','commedia','drammatico','fantascienza','fantasy','horror','thriller') NOT NULL,
@@ -12,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `serie` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
 
 CREATE TABLE IF NOT EXISTS `utenti` (
-`id` int(10) unsigned NOT NULL,
+`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `nome` varchar(16) CHARACTER SET latin1 NOT NULL,
   `cognome` varchar(16) CHARACTER SET latin1 NOT NULL,
   `nickname` varchar(16) CHARACTER SET latin1 NOT NULL,

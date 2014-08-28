@@ -206,7 +206,7 @@ EOF;
 				'password' => $_POST['pass']
 			)))
 				return "<h2>Utente Aggiunto</h2><script type='text/javascript'>setTimeout(function(){location.href='".__http_path."/index.html';},1500);</script>";
-			$message = '<div class="information">Utente gi&agrave; esistente<!-- '.db::$db->error.' --></div>';
+			$message = '<div class="information">Utente gi&agrave; esistente</div>';
 		}
 		return <<<EOF
 <h1>Nuovo utente</h1>$message
